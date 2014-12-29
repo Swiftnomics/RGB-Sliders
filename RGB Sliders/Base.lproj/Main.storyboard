@@ -16,18 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gye-Vt-Uwz">
-                                <rect key="frame" x="24" y="256" width="270" height="31"/>
-                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="updateBackgroundColor" destination="vXZ-lx-hvc" eventType="valueChanged" id="7I5-0K-Uvb"/>
-                                </connections>
-                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yd7-xK-gRp">
                                 <rect key="frame" x="24" y="189" width="270" height="31"/>
                                 <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="updateBackgroundColor" destination="vXZ-lx-hvc" eventType="valueChanged" id="IBP-jf-ksK"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Gye-Vt-Uwz">
+                                <rect key="frame" x="24" y="256" width="270" height="31"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="updateBackgroundColor" destination="vXZ-lx-hvc" eventType="valueChanged" id="7I5-0K-Uvb"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VzR-uu-x2K">
@@ -37,6 +37,9 @@
                                     <action selector="updateBackgroundColor" destination="vXZ-lx-hvc" eventType="valueChanged" id="z2M-Dg-iVv"/>
                                 </connections>
                             </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uer-GQ-doE">
+                                <rect key="frame" x="140" y="127" width="40" height="40"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -44,6 +47,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="blueSlider" destination="VzR-uu-x2K" id="hEL-B4-XrD"/>
+                        <outlet property="colorSquare" destination="uer-GQ-doE" id="dV7-1c-JVQ"/>
                         <outlet property="greenSlider" destination="Gye-Vt-Uwz" id="4xf-zR-9R8"/>
                         <outlet property="redSlider" destination="yd7-xK-gRp" id="jOq-WA-zhP"/>
                     </connections>
